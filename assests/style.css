@@ -20,6 +20,9 @@
 }
 
 /* Element level Global Styling */
+body{
+  background-color: var(--neutral-gray-100);
+}
 
 /* Global Styling */
 
