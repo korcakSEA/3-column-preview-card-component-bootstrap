@@ -1,0 +1,84 @@
+
+:root {
+  /* ### Primary */
+  --primary-gold-500: hsl(31, 77%, 52%);
+  --primary-cyan-800: hsl(184, 100%, 22%);     
+  --primary-green-950: hsl(179, 100%, 13%);    
+
+  /* ### Neutral */
+  --neutral-white-transparent: hsla(0, 0%, 100%, 0.75);   /* ideal for paragraph text */
+  --neutral-gray-100: hsl(0, 0%, 95%);    
+  /* used for backgrounds, headings, buttons */
+
+  /* Fonts */
+  --font-secondary: "Big Shoulders", sans-serif;
+  --font-primary : "Lexend Deca", sans-serif;
+
+  /* ### Font Weights */
+  --font-weight-regular: 400; /* regular text */
+  --font-weight-bold: 700;    /* bold headings or emphasis */
+}
+
+/* Element level Global Styling */
+
+/* Global Styling */
+
+.container{
+  width: min(87.5%, 57.5rem);
+  min-height: 100vh;
+}
+.row .card:nth-child(1){
+  background-color: var(--primary-gold-500);
+}
+.row .card:nth-child(2){
+  background-color: var(--primary-cyan-800);
+}
+.row .card:nth-child(3){
+  background-color: var(--primary-green-950);
+}
+
+.card__btn{
+    width: fit-content;
+    font-family: var(--font-primary);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: var(--neutral-gray-100);
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid var(--neutral-gray-100);
+    cursor: pointer;
+}
+
+.card__btn:hover, 
+.card__btn:focus{
+    background-color: transparent;
+    color: var(--neutral-gray-100);
+}
+
+/* Utility Styling */
+.text-primary{
+  color: var(--neutral-white-transparent) !important;
+  font-family: var(--font-primary);
+  font-size: 0.9375rem !important;
+}
+.text-secondary{
+  color: var(--neutral-gray-100) !important;
+  font-family: var(--font-secondary);
+}
+
+.text-sedans{
+  color: var(--primary-gold-500);
+}
+
+.text-suvs{
+  color:var(--primary-cyan-800);
+}
+
+.text-luxury{
+  color: var(--primary-green-950);
+}
+
+
+
+
